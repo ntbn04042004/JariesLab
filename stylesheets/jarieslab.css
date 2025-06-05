@@ -1,0 +1,1111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: 'Blanka';
+  src: url('assets/Blanka-Regular.otf') format('opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto Slab', serif;
+}
+webkit-scrollbar {
+	width: 1px;
+}
+
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+	  font-size: 62.5%;
+	
+}
+
+.content {
+	max-width: 1250px;
+	margin: auto;
+	margin-top: 50px;
+	padding: 0px 30px;
+}
+
+.navbar {
+  background-color: rgba(17, 17, 17, 0.9);
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	width: 100%;
+  height: 70px;
+	padding: 25px 0;
+	transition: top 0.3s ease;
+}
+
+
+.navbar .content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  position: relative;
+  top:-10px;
+
+}
+
+section {
+	height: auto;
+	width: 100%;
+	padding-top: 20rem;
+	padding-bottom: 20rem;
+}
+
+.container {
+	max-width: 1050px;
+	margin: auto;
+	padding: 0px 30px;
+	
+}
+.left-col {
+	flex: 5;
+	display: flex;
+	gap: 20px;
+  margin: auto;
+	align-items: center; 
+  justify-content: center;
+	
+
+}
+.responsive-only{
+  display: none;
+}
+/*phan logo*/
+.button {
+  margin: 0;
+  height: auto;
+  padding: 0;
+  border: none;
+  position: absolute;
+  top: -80px;
+  left: 50px;
+ } 
+
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgb(255, 255, 255);
+  --animation-color: #0b0101;
+  --fs-size: 2rem;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: 2rem;
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.logo-img{
+  position: relative;
+  top: -80px;
+  right: 495px;
+  width: 150px;
+  height: 100px;
+}
+
+
+/*phan login và các nút khác*/
+.nav-external-links {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  top: -80px; 
+  left: 100px;
+}
+
+.nav-external-links a {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: text-decoration 0.5s;
+
+}
+.nav-external-links a:hover {
+  color:#9a9a9a;
+  text-decoration: underline;
+}
+.custom-icon {
+  font-size: 20px; 
+  margin-top: 0;
+  margin-left: 0;
+}
+/*phan menu va nut menu*/
+.navbar .menu-list {
+	display: none;
+	gap: 3rem;
+	position: absolute;
+  left: -200%;
+  top: 47px;
+  width: 100%;
+  height: 100vw;
+  flex-direction: column;
+ 
+	
+
+}
+
+
+.menu-list {
+  display: none;
+  position: absolute;
+  background-color: rgba( 17, 17, 17, 0.9);
+  min-width: 340px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: block;
+  
+}
+
+.menu-list a {
+  font-size: 1.5rem;
+  display: block;
+  padding: 25px 70px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu-list a:hover {
+  background-color: #929292;
+}
+
+.menu-icon input:checked ~ .menu-list {
+  display: block;
+}
+
+
+.menu-icon {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 105%;
+  top: -42px;
+}
+
+.menu-icon input {
+  display: none;
+}
+
+.menu-icon span {
+  display: block;
+  position: absolute;
+  height: 3.5px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+}
+
+.menu-icon span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.menu-icon span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.menu-icon span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.menu-icon input:checked ~ .dropdown .dropdown-content {
+  display: block;
+}
+
+/*phan trang dau*/	
+.banner {
+ 
+  background: url("assets/banner.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 110vh;
+  position: relative; 
+  
+}
+.text-banner{
+  position: relative;
+  top: 210px;
+  right: -150px;
+
+}
+.text-banner h1 {
+  font-family: 'Blanka', sans-serif;
+  font-size: 7rem;
+  font-weight: 900;
+  color: #ece4e4;
+  margin-bottom: 5.5rem;
+  
+}
+
+.banner p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 20px;
+  
+}
+
+.btn-banner {
+  font-size: 1.5rem;
+  align-items: center;
+  
+  border-radius: 3.5rem;
+  font-weight: 600;
+  padding: 1rem 2.7rem;
+  color: #fdf8f8;
+  background: #000000;
+  position:relative;
+  top: 260px;
+  left: 150px;
+  text-decoration: none;
+  margin-top: 4rem;
+}
+.btn-banner:hover {
+  background: rgb(69, 69, 69);
+}
+.btn-banner:active {
+  background:#727272;
+
+}
+/*phan audio editing*/
+.audi {
+  height: 90vh;
+  background-color: #fefbfb;
+}
+
+.audi-header .title {
+  font-family: 'Poppins', sans-serif;
+	font-size: 7rem;
+	font-weight: 800;
+  position: relative;
+  top: -120px;
+  left: 50%;
+  bottom: 90%;
+}
+
+.audi-content {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	gap: 1rem;
+}
+.audi1-img{
+  width: 500px;
+  height: 350px;
+  margin-left: 100px;
+  position:relative;
+  top: -200px;
+}
+.audi2-img{
+  position: relative;
+  top: -50px;
+  left: -100px;
+  width: 300px;
+  height: 200px;
+}
+.audi-text{
+  font-size: 2rem;
+  margin-left: 50%;
+  margin-top: -450px;
+}
+.start{
+  font-size: 1.5rem;
+  color: #ffffff;
+  border: 2px solid #333;
+  border-radius: 30px;
+  background-color: #000;
+  padding: 10px 15px; 
+  margin-left: 1230px;
+  position: relative;
+  top: 30px;
+  
+  text-decoration-line: none;
+}
+.start:hover {
+  background-color: rgb(165, 165, 165); 
+  color: #000 ; 
+}
+.start:active{
+  background:#797979;
+}
+/*phan Mic*/
+section.Mic {
+  height: 100vh;
+  width: 100%;
+  background: url("assets/mic1.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.Mic-title {
+  font-family: 'Poppins', sans-serif;
+	font-size: 6rem;
+  font-weight: 700;
+	color:#000000;
+  position: relative;
+  top: -70px;
+  left: 370px; 
+
+}
+
+
+.Mic-text{
+  font-size: 2rem;
+  margin-left: 790px;
+  margin-top: -20px;
+}
+.explore{
+  font-size: 1.5rem;
+  color: #ffffff;
+  border: 2px solid #333;
+  border-radius: 30px;
+  background-color: #000;
+  padding: 10px 15px; 
+  margin-left: 790px;
+  position: relative;
+  top: 50px;
+  text-decoration-line: none;
+}
+.explore:hover {
+  background-color: rgb(158, 158, 158); 
+  color: #000 ; 
+}
+.explore:active{
+  background:#797979;
+}
+
+/*phan music instruments*/
+.instru {
+  height: 100vh;
+	background: url("assets/ins.png") no-repeat;
+  background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	justify-content: space-between;
+	
+}
+
+.instru-header {
+  
+	display: flex;
+	gap: 4rem;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.instru-header .title {
+  font-family: 'Poppins', sans-serif;
+	font-size: 6rem;
+	font-weight: 700;
+  position: relative;
+  top: 40px;
+  left: 350px;
+}
+.instru-text{
+  font-size: 2rem;
+  margin-left: 630px;
+  margin-top: 60px;
+}
+.learn{
+  font-size: 1.5rem;
+  color: #ffffff;
+  border: 2px solid #333;
+  border-radius: 30px;
+  background-color: #000;
+  padding: 10px 15px; 
+  margin-left: 1200px;
+  position: relative;
+  top: 60px;
+  text-decoration-line: none;
+}
+.learn:hover {
+  background-color: rgb(151, 151, 151); 
+  color: #000 ; 
+}
+
+.learn:active{
+  background:#797979;
+}
+
+/*phan contact*/
+
+.button2 {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  position: absolute;
+  top: 60px;
+  left: 155px;
+  
+ } 
+
+.button2 {
+  --border-right: 6px;
+  --text-stroke-color: rgb(255, 255, 255);
+  --animation-color: #ffffff;
+  --fs-size: 2rem;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+  text-decoration: none;
+}
+
+.logo2-img{
+  position: relative;
+  top: 100px;
+  left: -100px;
+  width: 150px;
+  height: 100px;
+}
+.contact .social-media {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 3rem;
+  margin-left: 1000px;
+  margin-top: 23px;
+}
+
+.contact .social-media>a {
+	display: flex;
+	background: #585858;
+  height: 3.5rem;
+	width: 3.5rem;
+	border-radius: .5rem;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	border: 1rem solid rgb(67, 67, 67);
+	transition: transform 0.5s;
+}
+
+.contact .social-media a i {
+	font-size: 2.5rem;
+	color: #ffffff;
+	transition: transform 0.5s;
+}
+.contact .social-media>a:hover {
+	border: .1rem solid rgb(59, 59, 59);
+	transform: translateY(.2rem);
+}
+
+.contact .social-media a:hover i {
+	transform: scale(0.90);
+}
+
+.contact .social-media a:hover .fa-instagram {
+	color: #f14843;
+}
+
+.contact .social-media a:hover .fa-facebook {
+	color: #184e7a;
+}
+.contact .social-media a:hover .fa-spotify {
+	color: #14770e;
+}
+.contact .social-media a:hover .fa-soundcloud {
+	color: #d44b36;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+ 
+  
+}
+
+footer a {
+  color: #0d0d0d;  
+  text-decoration: none;
+  
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+       
+footer li {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.f1  {
+  
+  position:relative;
+  top: 90px;
+  left: 165px;
+  
+
+}
+
+.f1 p{
+  font-size:  1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px ; 
+}
+.f1 a { 
+  color: #fff;
+  margin-top: 3rem;
+}
+.f2 {
+  position: relative;
+  top: 5px;
+  left: 400px;
+
+}
+
+.f2 p{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px ;
+}
+.f2 a { 
+  color: #fff;
+}
+.f3  {
+  position: relative;
+  top: -130px;
+  left: 595px;
+
+}
+.f3 p{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px ;
+}
+.f3 a { 
+  color: #fff;
+}
+.f4  {
+  position: relative;
+  top: 10px;
+  left: 120px;
+  
+}
+.f4 li{
+  display: inline;
+  margin-left: 4rem;
+  
+}
+.f4 a { 
+  color: #fff;
+}
+
+
+.f5{
+  position: relative;
+  top: -5px;
+  left: 1110px;
+  font-size: 1.1rem;
+  margin-left: 2rem;
+}
+.playstore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  background-color: rgb(255, 255, 255);
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+  position:relative;
+  top: -349px;
+  left: 1000px;
+  
+}
+
+.playstore-button:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  background-color: #3a3a3a;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-1 {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-2 {
+  font-weight: 600;
+}
+.language-selector {
+  color:#000;
+  display: inline-block;
+  font-size: 16px;
+  border: 0px solid #000000;
+  border-radius: 0px;
+  background-color: #ffffff;
+  padding: 10px 20px; 
+  position: relative;
+  top: -95px;
+  left: 1050px;
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  html, body {
+      font-size: 60%;
+    
+}
+
+  .navbar {
+    width: 100%;
+    height: 5%;
+  
+  }
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-external-links {
+  left: 0%;
+  top: -70px;
+}
+.button{
+  left: 12%;
+  top: -70px;
+  font-size: 1.2rem;
+
+}
+.responsive-only{
+display: none;
+}
+.logo-img{
+  left: -29%;
+  top: -70px;
+  height:20%;
+  width: 10%;
+}
+.menu-icon{
+  right: 94%;
+}
+.navbar .menu-list {
+  top: 200%;
+  left: -200%;
+  min-height: 100vh;
+  }
+.text-banner{
+  right: -6%;
+  top: 28%;
+    
+}
+.btn-banner {
+  top: 33%;
+  left: 5%;
+} 
+.audi {
+  min-height: 105vh;
+  background: url("assets/audi.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}  
+.audi-header .title {
+
+  font-size: 7rem;
+  font-weight: 800;
+  position: relative;
+  left: 20%;
+  top: 50%;
+}     
+.audi-text{
+  font-size: 2rem;
+  margin-left: 15%;
+  margin-top: -92%
+  
+}
+.audi1-img{
+  height: 60%;
+  width: 40%;
+  margin-top: 70%;
+  left: -2%;
+}
+.audi2-img{
+  height: 60%;
+  width: 40%;
+  margin-top: 60%;
+  left: -2%;
+}
+
+.start{
+  margin-left: 70%;
+  position: relative;
+}
+section.Mic {
+  background: url("assets/mic2.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}     
+.Mic-title {
+  font-size: 5rem;
+  position: relative;
+  margin-top: 13%;
+  left: 0%; 
+}
+
+.Mic-text{
+  font-size: 2.1rem;
+  margin-left: 14%;
+  margin-top: 0%;
+}
+.explore{
+  margin-left: 70%;
+  margin-top: 5%;
+}
+.instru {
+  height: 100vh;
+    background: url("assets/ins1.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: space-between;
+    
+}
+.instru-header .title {
+    font-size: 5rem; 
+    margin-top: 10%;
+    left: 20%;
+}
+.instru-text{
+  font-size: 2.1rem;
+  margin-left: 17%;
+  margin-top: 10%;
+}
+.learn{
+  margin-left: 70%;
+  top: 9%;
+  
+}
+footer li {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.button2{
+left: 15%;
+}
+.logo2-img{
+left: -16%;
+}
+.f1  {
+  left: 15%;
+  top: -300px; 
+} 
+.f1 p{
+
+  font-size:  2.5rem;
+}
+.f2{
+left: 380px;
+  top: -430px;
+}
+.f2 p{
+  font-size:  2.5rem;
+}
+.f3{
+  top:-640px;
+}
+.f3 p{
+  font-size:  2.5rem;
+}
+.contact .social-media {
+  margin-left: -350px;
+  margin-top: 400px;
+  position: relative;
+  top: 170px;
+}
+.playstore-button {
+  top: -349px;
+  left: 550px;
+}
+.language-selector {
+
+  top: -150px;
+  left: 90px;
+}
+.f4{
+left: 90px;
+top: -15px;
+}
+.f5{
+  left: 150px;
+  top: 10px;
+}
+
+} 
+
+
+@media only screen and (max-width: 740px) {
+html, body {
+  font-size: 40%;
+
+}
+
+.navbar {
+width: 100%;
+height: 7%;
+background-color: black;
+
+}
+
+.nav-external-links {
+display: none;
+}
+.button{
+display: none;
+}
+.logo-img{
+left: 80%;
+top: -85px;
+height:40%;
+width: 30%;
+}
+.responsive-only{
+display: block;
+}
+.custom-icon{
+color:#ffffff;
+}
+.menu-list1 {
+position: absolute;
+top: 200%;
+left: -135%;
+background-color: rgba(0, 0, 0, 0.9);
+min-width: 270px;
+min-height: 95vh;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0 );
+z-index: 1;
+transform: translateX(-100%);
+transition: transform 0.3s ;
+
+}
+
+.menu-list1 a {
+font-size: 2rem;
+display: block;
+padding: 20px 20px;
+text-decoration: none;
+color: #ffffff;
+
+}
+
+.menu-list1 a:hover {
+background-color: #929292;
+}
+
+.menu-icon1 input:checked ~ .menu-list1 {
+transform: translateX(0); 
+}
+
+.menu-icon1{
+background: transparent;
+cursor: pointer;
+position: absolute;
+top: -40%;
+right: 90%;
+}
+
+
+.menu-icon1 input {
+display: none;
+}
+.menu-icon{
+display: none;
+}
+.navbar .menu-list {
+display: none;
+}
+
+
+.text-banner{
+
+right: -6%;
+top: 28%;  
+}
+.btn-banner {
+top: 33%;
+left: 5%;
+} 
+.audi {
+min-height: 105vh;
+background: url("assets/audi.svg") no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}  
+.audi-header .title {
+
+font-size: 5rem;
+font-weight: 800;
+position: relative;
+left: 20%;
+margin-top: 30%;
+}     
+.audi-text{
+font-size: 1.3rem;
+margin-left: 20%;
+margin-top: -22%
+
+}
+.audi1-img{
+display: none;
+}
+.audi2-img{
+display: none;
+}
+
+.start{
+margin-left: 60%;
+position: relative;
+}
+section.Mic {
+background: url("assets/mic2.svg") no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}     
+.Mic-title {
+font-size: 5rem;
+position: relative;
+margin-top: 13%;
+left: 0%; 
+}
+
+.Mic-text{
+font-size: 1.3rem;
+margin-left: 8%;
+margin-top: -10%;
+}
+.explore{
+margin-left: 55%;
+margin-top: 5%;
+}
+.instru {
+height: 100vh;
+background: url("assets/ins1.png") no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+justify-content: space-between;
+
+}
+.instru-header .title {
+font-size: 4.5rem; 
+margin-top: 10%;
+left: 1%;
+}
+.instru-text{
+font-size: 1.5rem;
+margin-left: 9%;
+margin-top: 15%;
+}
+.learn{
+margin-left: 60%;
+top: 9%;
+
+}
+
+.button2{
+display: none;
+}
+.logo2-img{
+display: none;
+}
+.f1  {
+display: none;
+} 
+.f1 p{
+
+display: none;
+}
+.f2{
+display: none;
+}
+.f2 p{
+display: none;
+}
+.f3{
+display: none;
+}
+.f3 p{
+display: none;
+}
+.contact .social-media {
+display: none;
+}
+.playstore-button {
+display: none;
+}
+.language-selector {
+
+display: none;
+}
+.f4{
+display: none;
+}
+.f5{
+display: none;
+}
+
+}
+
